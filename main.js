@@ -37,7 +37,6 @@ const synchronize = async () => {
     await sequelize.authenticate({});
     await sequelize.sync({ alter: true });
   
-    // await sourceChat.sync({ force: true });
   };
   
   app.get('/', (req,res)=>{
