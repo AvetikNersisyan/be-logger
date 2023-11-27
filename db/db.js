@@ -13,4 +13,5 @@ export const sequelize = new Sequelize(dbName, dbUsername, dbPass, {
   dialect: "postgres",
   port: port,
   host: host,
+  logging: false,
 });
