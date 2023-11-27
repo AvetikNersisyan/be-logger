@@ -3,11 +3,12 @@ import { getPagination } from "./utils.js";
 
 const saveLog = async ( req, res, next ) => {
 
-   const { endpoint, response_text } = req.body;
+   const { endpoint, response_text, status } = req.body;
     console.log(req.body, 'body');
     const candidate = await Logger.create({
         endpoint,
         response_text,
+        status,
     })
 
     return res.send({ success: true, data: candidate })

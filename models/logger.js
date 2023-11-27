@@ -8,5 +8,8 @@ export const Logger = sequelize.define('api_responses', {
     },
     response_text: {
         type: DataTypes.TEXT,
+    },
+    status: {
+        type: DataTypes.BOOLEAN,
     }
 })
